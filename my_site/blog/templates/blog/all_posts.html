@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "css/blog/all_posts.css" %}">
+{% endblock css_files %}
+
+
+{% block page_title %}
+Home
+{% endblock page_title %}
+
+
+<!-- Header -->
+{% block main-header %}
+    {% include "blog/includes/header.html" %}
+{% endblock main-header %}
+
+{% block main-content %}
+    {% if has_posts %}
+    <h1 id="main-title">All Posts</h1>
+    <ul class="posts-list">
+        {% for post in all_posts %}
+        {% include "blog/includes/single-post.html" with post=post%}
+        {% endfor %}
+    </ul>
+    {% else %}
+    <div class="no-posts">
+        <h1 class="no-posts-message">Sorry! No Posts!</h1>
+    </div>
+    {% endif %}
+{% endblock main-content %}
+
+<!-- Footer -->
+{% block main-footer %}
+{% include "blog/includes/footer.html" %}
+{% endblock main-footer %}

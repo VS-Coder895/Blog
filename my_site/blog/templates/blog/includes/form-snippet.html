@@ -1,0 +1,13 @@
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "css/blog/includes/form-snippet.css" %}">
+{% endblock css_files %}
+
+{% for field in form %}
+    <div class="single-field {% if field.errors %}errors{% endif %}">
+        {{ field.label_tag }}
+        {{ field }}
+        {{ field.errors }}
+    </div>
+{% endfor %}

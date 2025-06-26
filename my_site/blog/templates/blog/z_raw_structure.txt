@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "css/blog/.css" %}">
+{% endblock css_files %}
+
+
+{% block page_title %}
+
+{% endblock page_title %}
+
+{% block main-header %}{% include "blog/includes/header.html" %}{% endblock main-header %}
+{% block main-content %}
+{% endblock main-content %}
+{% block main-footer %}{% include "blog/includes/footer.html" %}{% endblock main-footer %}

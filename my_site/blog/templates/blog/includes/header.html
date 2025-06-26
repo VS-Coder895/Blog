@@ -1,0 +1,38 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static "css/blog/includes/header.css"%}">
+
+<header id="main-header">
+    <h1 id="main-logo"><a href="{% url "home" %}">Ahmed's Blog</a></h1>
+    <div id="menu-drop-down" ><img src="{% static "images/menu.svg" %}" alt="Menu SVG"></div>
+    <nav id="main-navbar">
+        <ul id="main-list">
+            <li><a href="{% url "home" %}">Home</a></li>
+            <li id="category-drop-down-list">
+                <a href="#">Category</a>
+                <ul>
+                    <li><a href="{% url "category" slug='database' %}">Database</a></li>
+                    <li><a href="{% url "category" slug='programming-languages'%}">Programming Languages</a></li>
+                    <li><a href="{% url "category" slug='full-stack'%}">Full-Stack</a></li>
+                    <li><a href="{% url "category" slug='back-end'%}">Back-End</a></li>
+                    <li><a href="{% url "category" slug='front-end'%}">Front-End</a></li>
+                </ul>
+            </li>
+            {% if is_logged_in %}
+            <li><a href="{% url "profile" %}">Profile</a></li>
+            {% else %}
+                <li><a href="{% url "sign-up" %}">Sign in</a></li>
+                <li><a href="{% url "login" %}">Login</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+
+  <div id="search-box">
+        <form action="{% url "posts-search" %}" method="GET">
+            <input id="search-bar" type="search" name="search_bar" placeholder="Search for posts ...">
+            <button id="search-btn">Search</button>
+        </form>
+    </div>
+</header>
+
+<script src="{% static "js/main.js" %}"></script>

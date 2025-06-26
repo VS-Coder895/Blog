@@ -1,0 +1,51 @@
+.single-field {
+    display: flex;
+    margin-bottom: 2rem;
+    flex-flow: column nowrap;
+}
+
+.single-field label {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.single-field input {
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    flex: 1 1 0;
+    border-radius: 4px;
+}
+
+.errors label {
+    color: #ff6347;
+}
+
+.errors input {
+    background-color: #ff6347;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.errors input:focus {
+    outline: 1px solid dodgerblue;
+}
+
+.errors .errorlist li {
+    color: #ff6347;
+}
+
+@media (min-width:320px) and (max-width: 1280px) {
+    .single-field label {
+        font-size: 1rem;
+    }
+
+    .single-field input {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+    }
+}

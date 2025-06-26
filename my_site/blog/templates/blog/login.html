@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "css/blog/login.css" %}">
+{% endblock css_files %}
+
+
+{% block page_title %}
+Login
+{% endblock page_title %}
+
+
+{% block main-header %}{% include "blog/includes/header.html" %}{% endblock main-header %}
+    {% block main-content %}
+
+        <h1 id="main-title">Login In</h1>
+        <div class="form-control">
+            <form action="{% url "login" %}" method="POST" novalidate>
+                {% csrf_token %}
+                <ul>
+                    {% comment %} Login Form {% endcomment %}
+                   {% include "blog/includes/form-snippet.html" with form=login_form %}
+                </ul>
+                <button id="login-btn">Login In</button>
+            </form>
+        </div>
+        
+    {% endblock main-content %}
+{% block main-footer %}{% include "blog/includes/footer.html" %}{% endblock main-footer %}

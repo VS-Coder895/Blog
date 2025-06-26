@@ -1,0 +1,3 @@
+1. binding data to the form For (User-Profile) [ Success ]
+2. CommentForm In (blog/post-details.html)  [ Success ]
+

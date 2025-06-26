@@ -1,0 +1,13 @@
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "css/blog/includes/single-post.css" %}">
+{% endblock css_files %}
+
+<li class="single-post">
+    <a href="{% url "post-details" post.slug %}">
+        <img src="{{ post.image.url }}" alt="{{ post.title }}">
+        <h1><a class="post-title" href="{% url "post-details" post.slug %}">{{ post.title }}</a></h1>
+        <div class="post-content">{{ post.content }}</div>
+    </a>
+</li>

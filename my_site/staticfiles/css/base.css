@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Colors: SlateBlue, MediumSeaGreen, DodgerBlue, Orange */
+:root {
+    --bg-main-color: #641ccf !important;
+    --bg-dark: #343a40 !important;
+    --bg-success: #28a745 !important;
+    --bg-dnager: #dc3545 !important;
+    --white-text: #fff;
+    --dark-text: #333;
+    --main-padding: 1rem;
+    --main-margin: 1rem;
+    --main-border-radius: 3px;
+    --main-box-shadow: 2px 2px 5px #fff;
+}
+
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#main-content {
+    flex: 1 1 0;
+    margin: 3rem 0;
+}

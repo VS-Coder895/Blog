@@ -1,0 +1,47 @@
+1. Forms methods:
+
+    {{ form.non_field_erros }}
+    {{ form.hidden_fields }} 
+    {{ form.visible_fields }}
+
+
+2. Field Attributes:
+
+    {{ form.field.[  label, # label without (label_suffix)
+
+                        label_tag, # label with the (label_suffix)
+
+                        id_for_label, # the value of id attr
+
+                        value, html_name, # the value of name attr
+
+                        help_text, # 
+
+                        errors, # field validation errors
+
+                        field, # instance of the field, we can use it to access to the field attr, such as: {{ form.field.field.max_length }}
+
+                        is_hidden # true OR false    
+                    ] }}
+
+3. form.is_valid():
+
+    1. True
+
+    2. Stores data to [form.cleaned_data] dictionary!
+
+4. To access the object in the (CBV) Class Based-View use 
+    
+    a. [ self.object] / [ self.get_object() ]
+
+5. in [ self.get_object(slug=slug) ] we can use it as get() method, 
+
+   we can use it with conditions.
+
+6. الفرق بين self و كذلك self.object بداخل CBV:
+
+    a. self         ---> references to the CBV itself
+    b. self.object  ---> references to the object that the CBV fetch
+
+
+7. 
