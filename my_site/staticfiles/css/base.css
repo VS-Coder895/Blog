@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -29,7 +31,7 @@ a {
 
 
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Fuzzy Bubbles", 'Arial Narrow Bold',sans-serif;
     min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
