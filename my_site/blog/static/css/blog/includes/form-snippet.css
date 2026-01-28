@@ -11,12 +11,14 @@
 }
 
 .single-field input {
+    font-family: inherit;
     display: block;
     font-size: 1.2rem;
+    font-weight: 900;
     padding: 0.5rem;
     margin-top: 1rem;
     flex: 1 1 0;
-    border-radius: 4px;
+    border-radius: 12px;
 }
 
 .errors label {

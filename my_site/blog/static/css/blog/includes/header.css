@@ -97,12 +97,12 @@
     display: inline-flex;
     justify-content: flex-end;
     align-items: center;
+
 }
 
 #search-box form {
     display: flex;
     align-items: center;
-
 }
 
 #search-box #search-bar {
@@ -127,6 +127,7 @@
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
+    border-radius: 12px;
 }
 
 #search-box #search-btn:hover {
