@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -15,7 +17,7 @@ a {
 
 /* Colors: SlateBlue, MediumSeaGreen, DodgerBlue, Orange */
 :root {
-    --bg-main-color: #641ccf !important;
+    --bg-main-color: #0c6c78 !important;
     --bg-dark: #343a40 !important;
     --bg-success: #28a745 !important;
     --bg-dnager: #dc3545 !important;
@@ -29,7 +31,7 @@ a {
 
 
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Fuzzy Bubbles",sans-serif;
     min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
