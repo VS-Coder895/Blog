@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="{% static "css/blog/includes/header.css"%}">
 
 <header id="main-header">
-    <h1 id="main-logo"><a href="{% url "home" %}">Ahmed's Blog</a></h1>
+    <h1 id="main-logo"><a href="{% url "home" %}">VS Coder's Blog</a></h1>
     <div id="menu-drop-down" ><img src="{% static "images/menu.svg" %}" alt="Menu SVG"></div>
     <nav id="main-navbar">
         <ul id="main-list">
@@ -21,7 +21,7 @@
             {% if is_logged_in %}
             <li><a href="{% url "profile" %}">Profile</a></li>
             {% else %}
-                <li><a href="{% url "sign-up" %}">Sign in</a></li>
+                <li><a href="{% url "sign-up" %}">Sign Up</a></li>
                 <li><a href="{% url "login" %}">Login</a></li>
             {% endif %}
         </ul>
