@@ -81,7 +81,7 @@
 }
 
 #main-list #category-drop-down-list.active ul li a:hover {
-    background-color: #0b699b;
+    background-color: #711df7;
 }
 
 #main-navbar ul li a:hover {
@@ -117,8 +117,8 @@
 }
 
 #search-box #search-btn {
-    background-color: #ffa500;
-    border: 1px solid #ffa500;
+    background-color: rgba(255, 30, 180, 0.788);
+    border: 1px solid rgb(255, 30, 180);
     color: rgb(255, 255, 255);
     font-size: 1rem;
     margin-left: 0.5rem;
@@ -127,11 +127,10 @@
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
-    border-radius: 32px;
 }
 
 #search-box #search-btn:hover {
-    background-color: transparent;
+    background-color: rgb(255, 30, 180);
     color: #fff;
 }
 
